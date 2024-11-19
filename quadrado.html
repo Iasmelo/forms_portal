@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal das Formas - Quadrado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/quadrado.css">
+
+</head>
+<body>
+    <header>
+        <h1>Portal das Formas</h1>
+    </header>
+    <main>
+        <h2>Quadrado</h2>
+        <div class="description">
+            <img src="images/quadrado.png" alt="Quadrado">
+            <p>O quadrado é uma figura geométrica plana com quatro lados iguais e quatro ângulos retos.<br>
+            Ele é amplamente utilizado em construções, design e outras áreas práticas.</p>
+        </div>
+        <form onsubmit="calcularArea(event)">
+            <label for="lado">Digite o valor do lado:</label><br>
+            <input type="number" id="lado" placeholder="Lado do quadrado" required><br>
+            <button type="submit">Calcular Área</button>
+        </form>
+        <div class="result" id="resultado"></div>
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar ao Menu</button>
+    </main>
+    <footer>
+        <p>© 2024 - Portal das Formas.</p>
+    </footer>
+    <script src="js/quadrado.js"></script>
+
+</body>
+</html>

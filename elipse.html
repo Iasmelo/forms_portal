@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal das Formas - Elipse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/elipse.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Portal das Formas</h1>
+    </header>
+    <main>
+        <h2>Elipse</h2>
+        <div class="description">
+            <img src="images/elipse.png" alt="Elipse">
+            <p>A elipse é uma figura geométrica plana onde a soma das distâncias de qualquer ponto na curva até dois pontos fixos, chamados focos, é constante.<br></p>
+        </div>
+        <form onsubmit="calcularArea(event)">
+            <label for="semiMaior">Digite o valor do semi-eixo maior (a):</label><br>
+            <input type="number" id="semiMaior" placeholder="Semi-eixo maior (a)" required><br>
+            <label for="semiMenor">Digite o valor do semi-eixo menor (b):</label><br>
+            <input type="number" id="semiMenor" placeholder="Semi-eixo menor (b)" required><br>
+            <button type="submit">Calcular Área</button>
+        </form>
+        <div class="result" id="resultado"></div>
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar ao Menu</button>
+    </main>
+    <footer>
+        <p>© 2024 - Portal das Formas.</p>
+    </footer>
+    <script src="js/elipse.js"></script>
+
+
+</body>
+</html>

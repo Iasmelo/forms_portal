@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal das Formas - Polígono Regular</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/poligono.css">
+
+</head>
+<body>
+    <header>
+        <h1>Portal das Formas</h1>
+    </header>
+    <main>
+        <h2>Polígono Regular</h2>
+        <div class="description">
+            <img src="images/poligono.png" alt="Polígono Regular">
+            <p>Os polígonos regulares são figuras geométricas cujos lados e ângulos são iguais.<br>
+            Exemplos incluem triângulos, quadrados, pentágonos, hexágonos e outros.<br>
+            Selecione um número de lados e informe o comprimento do lado para calcular sua área.</p>
+        </div>
+        <form onsubmit="calcularArea(event)">
+            <label for="lados">Digite o número de lados do polígono (mínimo 3):</label><br>
+            <input type="number" id="lados" placeholder="Número de lados" min="3" required><br>
+            <label for="comprimento">Digite o comprimento de cada lado:</label><br>
+            <input type="number" id="comprimento" placeholder="Comprimento de cada lado" required><br>
+            <button type="submit">Calcular Área</button>
+        </form>
+        <div class="result" id="resultado"></div>
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar ao Menu</button>
+    </main>
+    <footer>
+        <p>© 2024 - Portal das Formas.</p>
+    </footer>
+    <script src="js/poligono.js"></script>
+
+    
+</body>
+</html>

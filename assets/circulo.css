@@ -1,0 +1,111 @@
+body {
+    background: radial-gradient(circle at center, #2d2f55, #1c1b33, #000000);
+    color: #FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #e14eca, #ba54f5);
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 0 0 15px #FFFFFF;
+}
+
+main {
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.description {
+    margin: 20px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form input {
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 300px;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(90deg, #6c5ce7, #e14eca);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.8);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #00FFFF;
+}
+
+.back-button {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(90deg, #6c5ce7, #a29bfe);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px rgba(135, 206, 250, 0.9);
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #6c5ce7, #a29bfe);
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+}

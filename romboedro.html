@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal das Formas - Romboedro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/romboedro.css">
+  
+</head>
+<body>
+    <header>
+        <h1>Portal das Formas</h1>
+    </header>
+    <main>
+        <h2>Romboedro</h2>
+        <div class="description">
+            <img src="images/romboedro.png" alt="Romboedro">
+            <p>O romboedro é um poliedro de seis faces, todas elas losangos idênticos. <br>Não é considerado um poliedro regular, pois suas faces, apesar de idênticas, não são polígonos regulares.</p>
+        </div>
+        <form onsubmit="calcular(event)">
+            <label for="aresta">Digite o valor da aresta:</label><br>
+            <input type="number" id="aresta" placeholder="Aresta do romboedro" required><br>
+            <label for="angulo">Digite o valor do ângulo (em graus):</label><br>
+            <input type="number" id="angulo" placeholder="Ângulo entre as faces" required><br>
+            <button type="submit">Calcular Área e Volume</button>
+        </form>
+        <div class="result" id="resultado"></div>
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar ao Menu</button>
+    </main>
+    <footer>
+        <p>© 2024 - Portal das Formas.</p>
+    </footer>
+    <script src="js/romboedro.js"></script>
+
+</body>
+</html>

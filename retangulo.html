@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal das Formas - Retângulo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/retangulo.css">
+</head>
+<body>
+    <header>
+        <h1>Portal das Formas</h1>
+    </header>
+    <main>
+        <h2>Retângulo</h2>
+        <div class="description">
+            <img src="images/retangulo.png" alt="Retângulo">
+            <p>O retângulo é uma figura geométrica plana formada por quatro lados, onde os lados opostos possuem o mesmo comprimento.<br>
+            Ele é amplamente utilizado na arquitetura, design e diversas outras áreas.</p>
+        </div>
+        <form onsubmit="calcularArea(event)">
+            <label for="largura">Digite o valor da largura:</label><br>
+            <input type="number" id="largura" placeholder="Largura do retângulo" required><br>
+            <label for="altura">Digite o valor da altura:</label><br>
+            <input type="number" id="altura" placeholder="Altura do retângulo" required><br>
+            <button type="submit">Calcular Área</button>
+        </form>
+        <div class="result" id="resultado"></div>
+        <button class="back-button" onclick="window.location.href='index.html'">Voltar ao Menu</button>
+    </main>
+    <footer>
+        <p>© 2024 - Portal das Formas.</p>
+    </footer>
+    <script src="js/retangulo.js"></script>
+</body>
+</html>
